@@ -1,4 +1,4 @@
 # sky-beer
 Teamwork Skylab Bootcamp Project
 
-https://github.com/OscarErre/sky-beer
+https://oscarerre.github.io/sky-beer
