@@ -1,0 +1,732 @@
+.brewdog__title, .ranking__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  padding: 0.2% 3%;
+  font-size: 150%;
+  margin: 1%;
+  font-family: "Staatliches";
+  letter-spacing: 0.4rem; }
+
+.brewdog__description, .ranking__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 1%;
+  font-size: 110%;
+  margin: 1rem; }
+
+.feedback {
+  position: fixed;
+  top: 0;
+  z-index: 2000000000;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .feedback__back {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    background-color: white; }
+  .feedback__container {
+    position: absolute;
+    z-index: 2000000000;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    opacity: 1;
+    color: black; }
+  .feedback__message {
+    width: 100vw;
+    font-size: 3vh;
+    font-family: "Staatliches";
+    background: tomato;
+    margin-top: 2rem;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; }
+  .feedback__image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 1; }
+    .feedback__image img {
+      max-width: 100%; }
+
+.iteminfo__imageContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center; }
+  @media only screen and (max-width: 1023px) {
+    .iteminfo__imageContainer {
+      width: 100%;
+      height: 23rem; } }
+  @media only screen and (min-width: 1024px) {
+    .iteminfo__imageContainer {
+      width: 67%;
+      height: 30rem; } }
+.iteminfo__image {
+  display: flex;
+  height: 100%;
+  padding: 3%; }
+.iteminfo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 4%; }
+  @media only screen and (max-width: 1023px) {
+    .iteminfo__container {
+      width: 100%;
+      height: 23rem; } }
+  @media only screen and (min-width: 1024px) {
+    .iteminfo__container {
+      width: 67%;
+      height: 30rem; } }
+
+.container__description {
+  display: flex;
+  justify-content: center; }
+.container__list {
+  list-style: none; }
+  .container__list div {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-size: 2vh; }
+.container__others {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; }
+
+.moreinfo__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%; }
+
+.beer-detail__title {
+  display: flex;
+  font-family: "Staatliches";
+  font-size: 5vh;
+  width: 100%;
+  justify-content: center; }
+.beer-detail__iteminfo {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-content: center;
+  height: 80%; }
+  @media only screen and (max-width: 1023px) {
+    .beer-detail__iteminfo {
+      flex-direction: column; } }
+  @media only screen and (min-width: 1024px) {
+    .beer-detail__iteminfo {
+      flex-direction: row; } }
+.beer-detail__brewers-tips {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center; }
+.beer-detail__moreinfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 5%; }
+
+.brewdog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 100vw;
+  height: 20rem;
+  z-index: 10;
+  background-image: url("img/brewdog.jpg");
+  background-position: 30%;
+  background-size: cover; }
+  .brewdog__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15%;
+    background: #ffd000;
+    color: #3d3d3d;
+    cursor: pointer;
+    padding: 1% 5% 1% 5%; }
+    .brewdog__button:hover {
+      background: tomato;
+      color: white; }
+
+.random-beer__inside {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  height: 70%;
+  cursor: pointer;
+  transition: 1s all ease; }
+.random-beer__inside:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%; }
+.random-beer__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  height: 30%;
+  overflow: hidden;
+  color: tomato; }
+.random-beer__img {
+  height: 40%; }
+.random-beer__text {
+  font-size: 75%;
+  height: 30%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-align: justify; }
+
+.ranking__title {
+  cursor: pointer; }
+  .ranking__title:hover {
+    background: tomato;
+    color: white; }
+
+.beers__random-beer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 40%;
+  margin: 0 2.5% 0 2.5%;
+  border: 1px solid whitesmoke;
+  cursor: pointer; }
+
+.welcome {
+  display: flex;
+  width: 100vw; }
+  @media only screen and (max-width: 1023px) {
+    .welcome {
+      flex-direction: column; } }
+  @media only screen and (min-width: 1024px) {
+    .welcome {
+      flex-direction: row; } }
+  .welcome__beers {
+    background-image: url("img/beers.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0.8; }
+    @media only screen and (max-width: 1023px) {
+      .welcome__beers {
+        width: 100%;
+        height: 23rem; } }
+    @media only screen and (min-width: 1024px) {
+      .welcome__beers {
+        width: 67%;
+        height: 30rem; } }
+  .welcome__ranking {
+    background-image: url("img/ranking.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0.8; }
+    @media only screen and (max-width: 1023px) {
+      .welcome__ranking {
+        width: 100%;
+        min-height: 23rem; } }
+    @media only screen and (min-width: 1024px) {
+      .welcome__ranking {
+        width: 33%;
+        min-height: 30rem; } }
+
+.speech__title {
+  font-family: "Staatliches";
+  font-size: 150%; }
+.speech__description {
+  font-size: 80%; }
+
+.video__title {
+  font-size: 150%;
+  font-family: "Staatliches";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  padding: 0.5% 4%;
+  margin: 1%; }
+.video__description {
+  width: 100vw;
+  background: whitesmoke;
+  font-size: 80%;
+  display: flex;
+  justify-content: center; }
+.video__background {
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  max-width: 100%;
+  z-index: -1;
+  opacity: 0.7; }
+
+.menu__beers, .menu__community, .menu__invest, .menu__search {
+  color: white;
+  font-size: 120%;
+  padding: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer; }
+  .menu__beers:hover, .menu__community:hover, .menu__invest:hover, .menu__search:hover {
+    color: tomato; }
+.menu__search {
+  width: 50%;
+  display: flex;
+  margin-right: 20%; }
+  .menu__search form {
+    display: flex; }
+.menu__invest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 15%;
+  background: #ffd000;
+  color: #3d3d3d;
+  cursor: pointer;
+  padding: 1% 5% 1% 5%; }
+  .menu__invest:hover {
+    background: tomato;
+    color: white; }
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  height: 15vh;
+  width: 100vw;
+  padding: 0.5%;
+  background-color: #2c2c2c;
+  color: white; }
+  .header__burguer-search {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #2c2c2c;
+    z-index: 1000000; }
+    .header__burguer-search form {
+      display: flex; }
+  .header__back {
+    height: 15vh; }
+  .header__logo {
+    height: 90%; }
+  @media only screen and (max-width: 1023px) {
+    .header__title {
+      display: none; }
+    .header__burguer {
+      width: 20%;
+      height: 100%;
+      font-size: 7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+    .header__menu {
+      display: none; } }
+  @media only screen and (min-width: 1024px) {
+    .header__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 150%;
+      width: 15%;
+      font-family: "Staatliches";
+      letter-spacing: 3%; }
+    .header__burguer {
+      display: none; }
+    .header__menu {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      padding: 0; } }
+  .header__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: white;
+    cursor: pointer; }
+  .header__login:hover {
+    color: tomato; }
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .main__speech {
+    width: 100vw;
+    height: 20rem;
+    color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .main__video {
+    width: 100vw;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .main__beer-detail {
+    position: fixed;
+    top: 15vh;
+    z-index: 1000;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    transition: 2s all ease; }
+
+.footer {
+  width: 100vw;
+  height: 20rem;
+  background: #2c2c2c;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__socialmedia {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    list-style: none;
+    padding: 0; }
+    .footer__socialmedia__media-icon {
+      margin: 0 1rem 0 1rem; }
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center; }
+  @media only screen and (max-width: 1023px) {
+    .sign-in {
+      width: 100vw;
+      height: 40%; } }
+  @media only screen and (min-width: 1024px) {
+    .sign-in {
+      width: 30%;
+      height: 70%; } }
+  .sign-in__form {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    width: 90%; }
+    @media only screen and (max-width: 1023px) {
+      .sign-in__form {
+        align-items: center; } }
+    @media only screen and (min-width: 1024px) {
+      .sign-in__form {
+        align-items: flex-end; } }
+    .sign-in__form label, .sign-in__form button {
+      margin: 1%; }
+
+.sign-up {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2%;
+  align-items: center; }
+  @media only screen and (max-width: 1023px) {
+    .sign-up {
+      width: 100vw;
+      height: 60%; } }
+  @media only screen and (min-width: 1024px) {
+    .sign-up {
+      width: 50%;
+      height: 70%;
+      border-left: 1px solid white; } }
+  .sign-up__text {
+    color: whitesmoke;
+    width: 45%;
+    text-align: left; }
+  .sign-up__form {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    width: 45%;
+    align-items: flex-end; }
+    .sign-up__form label, .sign-up__form button {
+      margin: 1%; }
+
+.login {
+  position: fixed;
+  z-index: 10000;
+  top: 15vh;
+  left: 0;
+  width: 100vw;
+  min-height: 50vh;
+  background-color: #2c2c2c;
+  transition: 1s height ease;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .login__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 120%;
+    padding-bottom: 2%;
+    font-family: "Staatliches";
+    color: whitesmoke; }
+  .login__hello-username {
+    color: whitesmoke; }
+  .login__user-logout {
+    color: whitesmoke; }
+
+.list-item__container {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .list-item__container:hover :nth-child(odd) {
+    visibility: visible; }
+.list-item__title {
+  position: absolute;
+  top: 15%;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+  width: 95%;
+  color: tomato;
+  background-color: whitesmoke;
+  padding: 1%; }
+.list-item__img {
+  height: 95%; }
+.list-item__text {
+  position: absolute;
+  bottom: 15%;
+  visibility: hidden;
+  display: flex;
+  color: #2c2c2c;
+  width: 80%;
+  font-size: 2vh;
+  align-items: center;
+  text-align: justify;
+  background-color: whitesmoke;
+  padding: 1%; }
+
+.search-menu {
+  display: flex; }
+  @media only screen and (max-width: 1023px) {
+    .search-menu {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .search-menu__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; } }
+  @media only screen and (min-width: 1024px) {
+    .search-menu {
+      margin-top: 2vh;
+      flex-direction: column;
+      justify-content: flex-start; } }
+  .search-menu__title {
+    font-size: 2vh;
+    color: tomato; }
+    @media only screen and (max-width: 1023px) {
+      .search-menu__title--principal {
+        width: 100%; } }
+  .search-menu__query {
+    margin-top: 1%;
+    margin-bottom: 1%; }
+  .search-menu__line {
+    width: 90%;
+    height: 5vh;
+    border-bottom: 1px dotted tomato; }
+  .search-menu__submit {
+    margin: 5%;
+    background-color: whitesmoke; }
+    .search-menu__submit:hover {
+      background-color: tomato;
+      color: whitesmoke; }
+  .search-menu__list {
+    list-style: none; }
+
+.search-results {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2%;
+  width: 100vw; }
+  @media only screen and (max-width: 1023px) {
+    .search-results {
+      flex-direction: column; } }
+  .search-results__menu {
+    padding: 1%;
+    width: 20%; }
+    @media only screen and (max-width: 1023px) {
+      .search-results__menu {
+        max-heigth: 30vh; } }
+  .search-results__list {
+    background: whitesmoke;
+    height: 70vh;
+    padding: 1%;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; }
+    @media only screen and (min-width: 1024px) {
+      .search-results__list {
+        width: 80%; } }
+  .search-results__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 20rem;
+    min-width: 16rem;
+    min-height: 30rem;
+    max-height: 40rem;
+    width: 30%;
+    height: 50%;
+    margin: 1%;
+    border: 1px solid black; }
+  .search-results__inside {
+    background-color: rgba(44, 44, 44, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+    transition: 1s all ease; }
+  .search-results__inside:hover {
+    background-color: rgba(44, 44, 44, 0.6);
+    width: 100%;
+    height: 100%; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Big Shoulders Text";
+  letter-spacing: 0.2rem; }
+
+.query {
+  width: 10rem;
+  background: unset;
+  border: unset;
+  border-bottom: 1px solid whitesmoke; }
+
+.button {
+  color: whitesmoke;
+  background: none;
+  border: none;
+  padding: 0.1rem;
+  margin-left: 0.2rem; }
+  .button:hover {
+    color: tomato; }
+
+.icon {
+  font-size: 1rem; }
+  .icon__text {
+    font-size: 0.8rem; }
+
+.burguer {
+  font-size: 80%; }
+
+.close {
+  align-self: flex-end;
+  position: absolute;
+  font-size: 3vh;
+  top: 3%;
+  right: 3%;
+  color: inherit;
+  cursor: pointer; }
+  .close:hover {
+    color: tomato; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit; }
+
+.fav {
+  display: flex;
+  color: whitesmoke;
+  justify-content: flex-end;
+  width: 90%;
+  cursor: pointer; }
+  .fav:hover {
+    color: tomato; }
+  .fav--isFav {
+    color: red; }
+  .fav--detail {
+    width: 10%; }
+
+.rate {
+  margin: 2%; }
+  .rate__star {
+    color: gold; }
+    .rate__star:hover {
+      color: whitesmoke; }
+
+.ranking--top1 {
+  font-size: 250%; }
+.ranking--top2 {
+  font-size: 175%; }
+.ranking--top3 {
+  font-size: 100%; }
+
+/*# sourceMappingURL=index.css.map */

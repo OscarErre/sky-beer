@@ -1,0 +1,89 @@
+@import panel
+
+@import components/feedback/feedback
+@import components/beer-detail/beer-detail
+@import components/brewdog/brewdog
+@import components/random-beers/random-beers
+@import components/welcome/welcome
+@import components/speech/speech
+@import components/video/video
+@import components/header/header
+@import components/app/main
+@import components/footer/footer
+@import components/sign-in/sign-in
+@import components/sign-up/sign-up
+@import components/login/login
+@import components/list-item/list-item
+@import components/search-results/search-results
+
+
+
+*
+    box-sizing: border-box
+    margin: 0
+    font-family: 'Big Shoulders Text'
+    letter-spacing: .2rem
+
+.query
+    width: 10rem
+    background: unset
+    border: unset
+    border-bottom: 1px solid whitesmoke
+    
+.button
+    color: whitesmoke
+    background: none
+    border: none
+    padding: .1rem
+    margin-left: .2rem
+    &:hover
+        color: tomato
+
+.icon
+    font-size: 1rem
+    &__text
+        font-size: .8rem
+.burguer
+    font-size: 80%
+
+.close
+    align-self: flex-end
+    position: absolute
+    font-size: 3vh
+    top: 3%
+    right: 3%
+    color: inherit
+    cursor: pointer
+    &:hover
+        color: tomato
+
+a
+    color: inherit
+    text-decoration: inherit
+a:visited
+    color: inherit
+    text-decoration: inherit
+
+.fav
+    display: flex
+    color: whitesmoke
+    justify-content: flex-end
+    width: 90%
+    cursor: pointer
+    &:hover
+        color: tomato
+
+    &--isFav
+        color: red
+
+    &--detail
+        width: 10%
+
+.rate
+    margin: 2%
+    &__star
+        color: gold
+        &:hover
+            color: whitesmoke
+
+@import modifiers

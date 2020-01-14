@@ -1,0 +1,36 @@
+@import iteminfo
+@import container
+@import moreinfo
+
+.beer-detail
+    &__title
+        display: flex
+        font-family: 'Staatliches'
+        font-size: 5vh
+        width: 100%
+        justify-content: center
+    &__iteminfo
+        display: flex
+        flex-direction: row
+        width: 100vw
+        align-content: center
+        height: 80%
+        @media only screen and (max-width: 1023px)
+            flex-direction: column
+        @media only screen and (min-width: 1024px)
+            flex-direction: row
+    &__brewers-tips
+        display: flex
+        flex-direction: row
+        width: 100%
+        justify-content: center
+    &__moreinfo
+        display: flex
+        flex-direction: row
+        width: 100%
+        justify-content: center
+        height: 5%
+        
+
+
+     

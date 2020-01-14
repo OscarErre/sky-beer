@@ -1,0 +1,29 @@
+.sign-up
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-evenly
+    padding: 2%
+    align-items: center
+    @media only screen and (max-width:1023px)
+        width: 100vw
+        height: 60%
+    @media only screen and (min-width:1024px)
+        width: 50%
+        height: 70%
+        border-left: 1px solid white
+
+    &__text
+        color: whitesmoke
+        width: 45%
+        text-align: left
+
+    &__form
+        display: flex
+        flex-direction: column
+        color: whitesmoke
+        width: 45%
+        align-items: flex-end
+        
+        & label, button
+            margin: 1%

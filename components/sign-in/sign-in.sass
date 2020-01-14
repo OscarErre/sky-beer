@@ -1,0 +1,23 @@
+.sign-in
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 2%
+    align-items: center
+    @media only screen and (max-width:1023px)
+        width: 100vw
+        height: 40%
+    @media only screen and (min-width:1024px)
+        width: 30%
+        height: 70%
+    &__form
+        display: flex
+        flex-direction: column
+        color: whitesmoke
+        width: 90%
+        @media only screen and (max-width:1023px)
+            align-items: center 
+        @media only screen and (min-width:1024px)
+            align-items: flex-end   
+        & label, button
+            margin: 1%
